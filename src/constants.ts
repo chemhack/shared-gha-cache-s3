@@ -9,7 +9,8 @@ export enum Inputs {
     AwsBucket = "aws-bucket",
     AwsAccessKeyId = "aws-access-key-id",
     AwsSecretAccessKey = "aws-secret-access-key",
-    AwsRegion = "aws-region"
+    AwsRegion = "aws-region",
+    AwsEndpoint = "aws-endpoint"
 }
 
 export enum Outputs {

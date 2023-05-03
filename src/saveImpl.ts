@@ -56,7 +56,8 @@ async function saveImpl(stateProvider: IStateProvider): Promise<number | void> {
         const s3Config = getConfig(
             core.getInput(Inputs.AwsRegion),
             core.getInput(Inputs.AwsAccessKeyId),
-            core.getInput(Inputs.AwsSecretAccessKey)
+            core.getInput(Inputs.AwsSecretAccessKey),
+            core.getInput(Inputs.AwsEndpoint)
         );
 
         cacheId = await cache.saveCache(

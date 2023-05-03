@@ -38,7 +38,8 @@ async function restoreImpl(
         const s3Config = getConfig(
             core.getInput(Inputs.AwsRegion),
             core.getInput(Inputs.AwsAccessKeyId),
-            core.getInput(Inputs.AwsSecretAccessKey)
+            core.getInput(Inputs.AwsSecretAccessKey),
+            core.getInput(Inputs.AwsEndpoint)
         );
 
         const cacheKey = await cache.restoreCache(

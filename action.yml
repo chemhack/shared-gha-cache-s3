@@ -38,6 +38,9 @@ inputs:
   aws-region:
     description: 'An AWS region where the bucket is located'
     required: true
+  aws-endpoint:
+    description: 'An AWS endpoint to access the bucket'
+    required: false
 outputs:
   cache-hit:
     description: 'A boolean value to indicate an exact match was found for the primary key'
